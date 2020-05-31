@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>今天晚饭吃了鸭鸭</title>
         <link rel="stylesheet" href="index.css" />
+        <title>我们ADA真是太棒啦！！！！</title>
     </head>
     <body>
-        <h2>
-            <strong>I have white shirt on me today</strong>
-        </h2>
+        <h1><strong>Dino部长今天又在摸鱼了！</strong></h1>
 
         <div class="my-container">
-            <img class="album" src="album1.jpg" alt="album1" />
-            <img class="album" src="album2.jpg" alt="album2" />
-            <img class="album" src="album3.jpg" alt="album3" />
+            <img
+                class="album"
+                src="album1.jpg"
+                alt="Album cannot be displayed!"
+            />
+            <img
+                class="album"
+                src="album2.jpg"
+                alt="Album cannot be displayed!"
+            />
+            <img
+                class="album"
+                src="album3.jpg"
+                alt="Album cannot be displayed!"
+            />
         </div>
 
-        <div class="my-container" id="second-container"></div>
+        <div id="second-container"></div>
 
-        <button id="add-button" onclick="weirdStuff()">CLICK ME!</button>
+        <button class="my-button" onclick="weird()">ClickMe!!!!!</button>
 
         <script>
-            function add_an_album() {
-                let container = document.getElementById("second-container");
-                container.innerHTML += '<img class="album" src="album3.jpg" alt="album3" />'
-            }
-
-            function weirdStuff() {
-                let listOfAlbum = document.getElementsByClassName("album");
-                for (let i = 0; i < listOfAlbum.length; i++) {
-                    const album = listOfAlbum[i];
-                    album.classList.add("weird");
-                }
+            function weird() {
+                var listOfAlbum = document.getElementsByClassName("album");
+				for (let i = 0; i < listOfAlbum.length; i++) {
+					const item = listOfAlbum[i];
+					item.classList.add("weird")
+				}
             }
         </script>
     </body>
